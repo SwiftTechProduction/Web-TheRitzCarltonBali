@@ -1,0 +1,124 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	line-height: 18px;
+	
+}
+
+input .warna{
+color: rgb(0,0,0);
+font-weight:bold;
+}
+
+#table{
+	text-decoration: none;
+	background: #ffffff;
+}
+
+#wrapper {
+	background-color:lightblue;
+
+}
+#wrapper #header {
+	
+	height: 200px;
+	width: 1333px;
+}
+
+#wrapper #menu {
+	height: 35px;
+	padding-left: 479px;
+	background-color:#010122;
+	text-align: center;
+}
+
+#wrapper  #menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	line-height: normal;
+}
+
+#wrapper  #menu li {
+	float: left;
+}
+
+#wrapper  #menu a {
+	display: block;
+	float: left;
+	height: 29px;
+	width: 100px;
+	text-decoration: none;
+	font-size: 14px;
+	padding-top: 10px;
+	font-weight: bold;
+	color: #ffffff;
+    text-align: center;
+
+}
+
+#wrapper #menu a:hover, #wrapper #menu #aktif{
+	clear: both;
+	color: #000000;
+	text-decoration: none;
+	background: #c1ec26;
+}
+
+	
+#wrapper #bawahnav {
+	background-color:#1d78cb;
+	height: 10px;
+}
+	
+#wrapper #baner {
+	background-color:#010122;
+	padding-left: 200px;
+	padding-top: 20px;
+	
+}
+#wrapper #clearer {
+	clear: both;
+}
+#wrapper #leftcontent {
+	float: left;
+	width: 600px;
+	padding-right: 10px;
+	padding-left: 200px;
+	padding-bottom: 5px;
+        
+}
+
+#wrapper #leftcontent #teks{
+	color: #000000;
+	font-size: 12px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom:5px;
+	padding-top: 5px;
+	text-decoration: none;
+	background: lightblue;
+	text-align: justify;
+}
+
+#wrapper #rightcontent {
+	background-color:#fffff;
+	float: right;
+	width: 300px;
+	padding-right:200px;
+	padding-top:40px;
+}
+#wrapper #clearer {
+	clear: both;
+}
+
+#wrapper #footer {
+padding-top:3px;
+	font-size: 15px;
+	color: #ffffff;
+	font-weight: bold;
+	background-color:#bd1387;
+	text-align: center;
+	height: 25px;
+}
+

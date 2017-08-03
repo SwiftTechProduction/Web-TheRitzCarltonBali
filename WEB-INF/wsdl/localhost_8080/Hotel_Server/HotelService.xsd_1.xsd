@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://service/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://service/">
+
+<xs:element name="deleteBooking" type="tns:deleteBooking"/>
+
+<xs:element name="deleteBookingResponse" type="tns:deleteBookingResponse"/>
+
+<xs:element name="deleteKamar" type="tns:deleteKamar"/>
+
+<xs:element name="deleteKamarResponse" type="tns:deleteKamarResponse"/>
+
+<xs:element name="getAllBooking" type="tns:getAllBooking"/>
+
+<xs:element name="getAllBookingResponse" type="tns:getAllBookingResponse"/>
+
+<xs:element name="getAllKamar" type="tns:getAllKamar"/>
+
+<xs:element name="getAllKamarResponse" type="tns:getAllKamarResponse"/>
+
+<xs:element name="insertBooking" type="tns:insertBooking"/>
+
+<xs:element name="insertBookingResponse" type="tns:insertBookingResponse"/>
+
+<xs:element name="insertKamar" type="tns:insertKamar"/>
+
+<xs:element name="insertKamarResponse" type="tns:insertKamarResponse"/>
+
+<xs:complexType name="deleteKamar">
+<xs:sequence>
+<xs:element name="kodeKamar" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteKamarResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="insertKamar">
+<xs:sequence>
+<xs:element name="kamar" type="tns:kamar" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="kamar">
+<xs:sequence>
+<xs:element name="harga" type="xs:string" minOccurs="0"/>
+<xs:element name="kodeKamar" type="xs:string" minOccurs="0"/>
+<xs:element name="lantaiKamar" type="xs:string" minOccurs="0"/>
+<xs:element name="namaKamar" type="xs:string" minOccurs="0"/>
+<xs:element name="tipeKamar" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="insertKamarResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteBooking">
+<xs:sequence>
+<xs:element name="id" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteBookingResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAllBooking">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getAllBookingResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:booking" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="booking">
+<xs:sequence>
+<xs:element name="checkIn" type="xs:string" minOccurs="0"/>
+<xs:element name="checkOut" type="xs:string" minOccurs="0"/>
+<xs:element name="harga" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:int"/>
+<xs:element name="kodeKamar" type="xs:string" minOccurs="0"/>
+<xs:element name="kodePelanggan" type="xs:string" minOccurs="0"/>
+<xs:element name="nama" type="xs:string" minOccurs="0"/>
+<xs:element name="namaKamar" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAllKamar">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getAllKamarResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:kamar" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="insertBooking">
+<xs:sequence>
+<xs:element name="booking" type="tns:booking" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="insertBookingResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
